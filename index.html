@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>aaqilbook</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar">
+        <h1>Aaqilbook</h1>
+    </div>
+
+    <div class="container">
+        <div class="book-container">
+            <h2>A Good man treats women with honour</h2>
+            <h5>prophet muhammedﷺ</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus rerum aperiam explicabo officiis
+                deleniti suscipit autem error ducimus nisi neque. Modi exercitationem sit voluptate corrupti obcaecati
+                dicta debitis, voluptates quidem.</p>
+            <button onclick="deletebook(event)">Delete</button>
+        </div>
+
+    </div>
+
+    <div class="popup-overlay"></div>
+    <div class="popup-box">
+        <h2>Add Book</h2>
+        <form>
+            <input type="text" placeholder="Book Tittle" id="book-tittle-input">
+            <input type="text" placeholder="Book Author" id="book-author-input">
+            <textarea placeholder="short description" id="book-description-input"></textarea>
+
+            <button id="add-book">ADD</button>
+            <button id="cancel-popup">CANCEL</button>
+        </form>
+    </div>
+
+    <button class="add-button" id="add-popup-button">+</button>
+    <script src="script.js"></script>
+</body>
+
+</html>
